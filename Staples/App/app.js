@@ -8,6 +8,10 @@ app.config([
                 templateUrl: "app/login.html",
                 controller: "loginController"
             })
+            .when("/signup", {
+                templateUrl: "app/html/signup.html",
+                controller: "signupController"
+            })
             .when("/home",
             {
                 templateUrl: "app/home.html",
@@ -26,3 +30,4 @@ app.run(["$http", function ($http) {
 
 }
 ]);
+
