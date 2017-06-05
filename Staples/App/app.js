@@ -6,16 +6,16 @@ app.config([
             .when("/",
             {
                 templateUrl: "app/login.html",
-                controller: "loginController"
+                controller: "LoginController"
             })
             .when("/signup", {
                 templateUrl: "app/html/signup.html",
-                controller: "signupController"
+                controller: "SignupController"
             })
             .when("/home",
             {
                 templateUrl: "app/home.html",
-                controller: "homeController"
+                controller: "HomeController"
             });
 
     }
