@@ -26,7 +26,11 @@ namespace Staples
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
-                      "~/Scripts/angular-route.js"));
+                      "~/Scripts/angular-route.js",
+                      "~/Scripts/App/app.js")
+                      .IncludeDirectory("~/App/", "*.js", true)
+                      .IncludeDirectory ("~/App/Controllers/", "*.js", true)
+                      );
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿app.controller("homeController", ["$scope", "$http", function ($scope, $http) {
+﻿app.controller("HomeController", ["$scope", "$http", function ($scope, $http) {
     $scope.values = [];
 
     $http.get("/api/values")
