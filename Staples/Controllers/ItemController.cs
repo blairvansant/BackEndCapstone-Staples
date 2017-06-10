@@ -9,5 +9,12 @@ namespace Staples.Controllers
 {
     public class ItemController : ApiController
     {
+        [Route("api/item")]
+        [System.Web.Http.HttpGet,System.Web.Http.Route]
+        public HttpResponseMessage GetAll()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
     }
+    
 }

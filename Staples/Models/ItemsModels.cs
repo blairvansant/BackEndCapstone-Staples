@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Staples.Models
 {
-    public class SingleItemModel
+    public class ItemsModels
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
+        public string NameOfItem { get; set; }
         public string DateOfPurchase { get; set; }
         public string ExpirationDate { get; set; }
         public string TimeToPurchase { get; set; }
