@@ -272,11 +272,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
-    <Content Include="App\Views\home.html" />
+    <Content Include="App\Partials\home.html" />
     <Content Include="App\Controllers\HomeController.js" />
-    <Content Include="App\Views\login.html" />
+    <Content Include="App\Partials\login.html" />
     <Content Include="App\Controllers\LoginController.js" />
-    <Content Include="App\Views\signup.html" />
+    <Content Include="App\Partials\signup.html" />
     <Content Include="App\Controllers\SignupController.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
