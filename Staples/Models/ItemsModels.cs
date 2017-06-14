@@ -10,5 +10,7 @@ namespace Staples.Models
         public string DateOfPurchase { get; set; }
         public string ExpirationDate { get; set; }
         public string TimeToPurchase { get; set; }
+        public string Perishable { get; set; }
+        public string NonPerishable { get; set; }
     }
 }
