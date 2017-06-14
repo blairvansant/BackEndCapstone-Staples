@@ -1,20 +1,20 @@
-﻿var app = angular.module("Authentication", ["ngRoute"]);
+﻿var app = angular.module("Staples", ["ngRoute"]);
 
 app.config([
     "$routeProvider", function ($routeProvider) {
         $routeProvider
             .when("/",
             {
-                templateUrl: "app/login.html",
+                templateUrl: "App/Partials/login.html",
                 controller: "LoginController"
             })
             .when("/signup", {
-                templateUrl: "app/html/signup.html",
+                templateUrl: "App/Partials/signup.html",
                 controller: "SignupController"
             })
             .when("/home",
             {
-                templateUrl: "app/home.html",
+                templateUrl: "App/Partials/home.html",
                 controller: "HomeController"
             });
 

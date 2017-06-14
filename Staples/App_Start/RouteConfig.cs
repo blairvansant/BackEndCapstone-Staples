@@ -15,7 +15,7 @@ namespace Staples
 
             routes.MapRoute(
                 name: "Default",
-                url: "{catchall}",
+                url: "{*catchall}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
