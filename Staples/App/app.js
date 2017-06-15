@@ -3,8 +3,7 @@
 app.config([
     "$routeProvider", function ($routeProvider) {
         $routeProvider
-            .when("/",
-            {
+            .when("/", {
                 templateUrl: "App/Partials/login.html",
                 controller: "LoginController"
             })
@@ -12,12 +11,15 @@ app.config([
                 templateUrl: "App/Partials/signup.html",
                 controller: "SignupController"
             })
-            .when("/home",
-            {
+            .when("/home", {
                 templateUrl: "App/Partials/home.html",
                 controller: "HomeController"
+            })
+            .when("/pantry", {
+                templateUrl: "App/Partials/pantry.html",
+                controller: "PantryController"
             });
-
+         
     }
 ])
 

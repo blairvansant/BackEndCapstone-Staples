@@ -264,6 +264,10 @@
     <Compile Include="Migrations\201706130132118_test.Designer.cs">
       <DependentUpon>201706130132118_test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706142127022_itemsss.cs" />
+    <Compile Include="Migrations\201706142127022_itemsss.Designer.cs">
+      <DependentUpon>201706142127022_itemsss.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -276,14 +280,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
-    <Content Include="App\Controllers\AddController.js" />
-    <Content Include="App\Partials\add.html" />
+    <Content Include="App\PantryController.js" />
     <Content Include="App\Partials\home.html" />
-    <Content Include="App\Controllers\HomeController.js" />
+    <Content Include="App\HomeController.js" />
     <Content Include="App\Partials\login.html" />
-    <Content Include="App\Controllers\LoginController.js" />
+    <Content Include="App\LoginController.js" />
+    <Content Include="App\Partials\pantry.html" />
     <Content Include="App\Partials\signup.html" />
-    <Content Include="App\Controllers\SignupController.js" />
+    <Content Include="App\SignupController.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -378,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706130132118_test.resx">
       <DependentUpon>201706130132118_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706142127022_itemsss.resx">
+      <DependentUpon>201706142127022_itemsss.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
