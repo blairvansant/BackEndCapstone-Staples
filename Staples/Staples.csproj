@@ -280,12 +280,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
-    <Content Include="App\PantryController.js" />
+    <Content Include="App\ItemController.js" />
     <Content Include="App\Partials\home.html" />
     <Content Include="App\HomeController.js" />
+    <Content Include="App\Partials\item.html" />
     <Content Include="App\Partials\login.html" />
     <Content Include="App\LoginController.js" />
-    <Content Include="App\Partials\pantry.html" />
     <Content Include="App\Partials\signup.html" />
     <Content Include="App\SignupController.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />

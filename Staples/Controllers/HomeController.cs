@@ -1,39 +1,42 @@
 ﻿using Staples.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web;
-using System.Web.Http;
 using System.Web.Mvc;
 
 namespace Staples.Controllers
 {
-    public class HomeController : ApiController
+    public class HomeController : Controller
     {
-        private ApplicationDbContext _context;
+        public ApplicationDbContext _context;
 
         public HomeController()
-            {
-              _context = new ApplicationDbContext();
-            }
-
-        public ViewResult Index()
         {
-            throw new NotImplementedException();
+             _context = new ApplicationDbContext();
         }
-
-        [System.Web.Http.Route("api/staplesDb")]
-        [System.Web.Http.HttpPost]
-        public HttpResponseMessage AddToDb(ItemsModels itemsModels)
+        public ActionResult Index()
         {
-            _context.Items.Add(itemsModels);
-            _context.SaveChanges();
-            return Request.CreateResponse(HttpStatusCode.OK);
-        }
+            ViewBag.Title = "Home Page";
 
-     
+            return View();
+        }
+        //[System.Web.Http.Route("api/staplesDb")]
+        //[System.Web.Http.HttpPost]
+        //public HttpResponseMessage StaplesDb(ItemsModels itemsModels)
+        //{
+        //    _context.Items.Add(itemsModels);
+        //    _context.SaveChanges();
+        //    return Request.CreateResponse(HttpStatusCode.OK);
+        //}
     }
 }
+
+
+
+
+
+    
+

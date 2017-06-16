@@ -1,5 +1,5 @@
 ﻿app.controller("HomeController", ["$scope", "$http", function ($scope, $http) {
-    $scope.values = [];
+    //$scope.values = [];
     $scope.ItemName = [];
     $scope.DateOfPurchase = [];
     $scope.newItem = {};
@@ -14,9 +14,10 @@
 
         $http.post('api/staplesDb', newItem)
             .then(function (res) {
-                $location.path('/pantry');
+                //$location.path('/pantry');
                 $scope.newItem = {};
-            })
+            });
+        console.log($scope.newItem);
          }
     }
 ]);

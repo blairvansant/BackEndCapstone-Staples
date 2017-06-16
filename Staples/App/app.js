@@ -1,7 +1,7 @@
 ﻿var app = angular.module("Staples", ["ngRoute"]);
 
 app.config([
-    "$routeProvider", function ($routeProvider) {
+    "$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
         $routeProvider
             .when("/", {
                 templateUrl: "App/Partials/login.html",
@@ -11,14 +11,15 @@ app.config([
                 templateUrl: "App/Partials/signup.html",
                 controller: "SignupController"
             })
-            .when("/home", {
-                templateUrl: "App/Partials/home.html",
-                controller: "HomeController"
-            })
             .when("/pantry", {
-                templateUrl: "App/Partials/pantry.html",
-                controller: "PantryController"
-            });
+                templateUrl: "App/Partials/item.html",
+                controller: "ItemController"
+            })
+             .when("/home", {
+                 templateUrl: "App/Partials/home.html",
+                 controller: "HomeController"
+             })
+            .otherwise({ redirectTo: "/" });
          
     }
 ])

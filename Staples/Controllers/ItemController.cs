@@ -11,7 +11,7 @@ namespace Staples.Controllers
 {
     public class ItemController : ApiController
     {
-        private ApplicationDbContext _context = new ApplicationDbContext();
+        ApplicationDbContext _context = new ApplicationDbContext();
 
         [Route("api/staplesDb")]
         public HttpResponseMessage GetAll()
