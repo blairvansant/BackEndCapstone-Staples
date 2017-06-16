@@ -29,8 +29,7 @@ namespace Staples
                       "~/Scripts/angular-route.js",
                       "~/Scripts/App/app.js",
                       "~/Scripts/respond.js")
-                      .IncludeDirectory("~/App/", "*.js", true)
-                      .IncludeDirectory ("~/App/Controllers/", "*.js", true)
+                      .IncludeDirectory("~/App", "*.js", true)
                       );
         }
     }

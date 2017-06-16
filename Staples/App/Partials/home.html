@@ -3,14 +3,14 @@
 <!--  </ul>-->
 
 <center><h1>Staples</h1></center>
-<center>
-    <form class="form-inline">
-    <input type="text" class="form-control" placeholder="enter a pantry item"/>
-    <input class="btn btn-primary" type="submit" value="Submit">
-    <input type="text" class="form-control" placeholder="enter date purchased"/>
-    <input class="btn btn-primary" type="submit" value="Submit">
-    </form>
-</center>
+    <center>
+        <form class="form-inline">
+            <input type="text" class="form-control" placeholder="enter a pantry item" ng-model="newItem.NameOfItem"/> 
+            <input type="text" class="form-control" placeholder="enter date purchased" ng-model="newItem.DateOfPurchase"/>
+            <input type="text" class="form-control" placeholder="enter expiration date" ng-model="newItem.ExpirationDate" />
+            <input class="btn btn-primary" type="submit" value="Submit" ng-click="submitToPantryList()"/>
+        </form>
+    </center>
 
 
 
