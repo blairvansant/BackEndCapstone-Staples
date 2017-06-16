@@ -1,1 +1,1 @@
-﻿app.controller("ItemController", ["$scope", "$http", function ($scope, $http)
+﻿//app.controller("ItemController", ["$scope", "$http", function ($scope, $http)

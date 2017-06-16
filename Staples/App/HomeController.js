@@ -5,14 +5,16 @@
     $scope.newItem = {};
    
 
-    $http.get("api/staplesDb/get")
+    $http.get("api/item")
         .then(function (result) {
             $scope.values = result.data;
+
+            console.log(result);
         });
 
     $scope.submitToPantryList = function () {
 
-        $http.post('api/staplesDb', newItem)
+        $http.post('api/item', $scope.newItem)
             .then(function (res) {
                 //$location.path('/pantry');
                 $scope.newItem = {};

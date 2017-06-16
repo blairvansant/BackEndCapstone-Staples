@@ -13,13 +13,12 @@ namespace Staples.Controllers
     {
         ApplicationDbContext _context = new ApplicationDbContext();
 
-        [Route("api/staplesDb")]
-        public HttpResponseMessage GetAll()
+        [Route("api/item")]
+        public IHttpActionResult GetAll()
         {
-            return Request.CreateResponse(HttpStatusCode.OK);
-        }
-
-        [Route("api/staplesDb")]
+            return Ok(_context.Items.ToList());
+        } 
+        [Route("api/item")]
         [HttpPost]
         public void Post(ItemsModels newItem)
         {
