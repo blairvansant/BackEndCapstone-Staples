@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
-    <center>
-        <h1>This will be the list of items you have in stock</h1>
-    </center>
-</body>
-</html>
+﻿
+<!--//value in values-->
+
+<div class="container" ng-repeat="food in ItemsModels">
+<ul>
+    <li> {{food.NameOfItem}} {{food.DateOfPurchase}} {{food.ExpirationDate}}</li>
+</ul>
+    <div>
+        <button ng-click="deleteFoodItems(food.Id)"></button>
+    </div>
+</div>

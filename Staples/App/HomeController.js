@@ -1,4 +1,4 @@
-﻿app.controller("HomeController", ["$scope", "$http", function ($scope, $http) {
+﻿app.controller("HomeController", ["$location", "$scope", "$http", function ($location, $scope, $http) {
     //$scope.values = [];
     $scope.ItemName = [];
     $scope.DateOfPurchase = [];
@@ -16,7 +16,7 @@
 
         $http.post('api/item', $scope.newItem)
             .then(function (res) {
-                //$location.path('/pantry');
+                $location.path('/pantry');
                 $scope.newItem = {};
             });
         console.log($scope.newItem);

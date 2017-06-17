@@ -21,7 +21,7 @@ namespace Staples.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<ItemsModels> Items { get; set; }
+        public DbSet<ItemsModels> ItemsModels { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
