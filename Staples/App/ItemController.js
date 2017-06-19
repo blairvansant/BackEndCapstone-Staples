@@ -30,6 +30,8 @@
             $http.delete(`api/item/${id}`)
             .then(function (response) {
                 resolve(response);
+
+                console.log(response , "delete")
             },
                 function (errorResponse) {
                     reject(errorResponse);
