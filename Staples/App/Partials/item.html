@@ -1,16 +1,4 @@
 ﻿
-<!--//value in values-->
-
-<!--<div class="container" ng-repeat="food in ItemsModels">
-<ul class="list-group">
-        <li class="list-group-item">
-            {{food.NameOfItem}} / {{food.DateOfPurchase}} / {{food.DateOfPurchase}}
-            <button type="button" class="btn-btn-primary btn pull-right btn-danger btn-sm" ng-click="deleteFoodItems(food.Id)">Delete</button>
-            <button type="button" class="btn-btn-primary btn pull-right btn-success btn-sm">Purchase</button>
-        </li>
-    </ul>
-     </div>-->
-
 <div class="container">
     <table class="table table-hover">
         <thead>
@@ -24,24 +12,51 @@
             <tr>
                 <td>{{food.NameOfItem}}</td>
                 <td>{{food.DateOfPurchase}}</td>
-                <td>{{food.DateOfPurchase}}</td>
-                <td><button type="button" class="btn btn-primary btn-success">Purchase</button></td> 
-               <!-- href to "purchase" https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=-->
+                <td>{{food.ExpirationDate}}</td>
+                <td><button type="button" class="btn btn-primary btn-success">Purchase</button></td>
+                 href to "purchase" https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=
                 <td><button type="button" class="btn btn-primary btn-danger" ng-click="deleteFoodItems(food.Id)">Delete</button></td>
             </tr>
         </tbody>
     </table>
 </div>
 
-<!--<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Button</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><button type="button" class="btn btn-primary">button</button></td>
-        </tr>
-    </tbody>
-</table>-->
+<!--<div class="container">
+    <h1>Click the filter icon <small>(<i class="glyphicon glyphicon-filter"></i>)</small></h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Pantry Items</h3>
+                    <div class="pull-right">
+                        <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                            <i class="glyphicon glyphicon-filter"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />
+                </div>
+                <table class="table table-hover" id="dev-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Date of Purchase</th>
+                            <th>Expiration Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{food.NameOfItem}}</td>
+                            <td>{{food.DateOfPurchase}}</td>
+                            <td>{{food.DateOfPurchase}}</td>
+                            <td><button type="button" class="btn btn-primary btn-success">Purchase</button></td>
+                            href to "purchase" https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=
+                            <td><button type="button" class="btn btn-primary btn-danger" ng-click="deleteFoodItems(food.Id)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </div>
+</div>-->

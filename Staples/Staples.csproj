@@ -284,6 +284,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
+    <Content Include="App\CSS\StyleSheet.css" />
     <Content Include="App\ItemController.js" />
     <Content Include="App\NavBarController.js" />
     <Content Include="App\Partials\home.html" />
