@@ -9,5 +9,6 @@ namespace Staples.Models
         public string NameOfItem { get; set; }
         public string DateOfPurchase { get; set; }
         public string ExpirationDate { get; set; }
+        public string UserId { get; set; }          
     }
 }

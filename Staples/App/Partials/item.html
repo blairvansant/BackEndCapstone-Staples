@@ -26,7 +26,7 @@
                 <td>{{food.DateOfPurchase}}</td>
                 <td>{{food.DateOfPurchase}}</td>
                 <td><button type="button" class="btn btn-primary btn-success">Purchase</button></td>
-                <td><button type="button" class="btn btn-primary btn-danger">Delete</button></td>
+                <td><button type="button" class="btn btn-primary btn-danger" ng-click="deleteFoodItems(food.Id)">Delete</button></td>
             </tr>
         </tbody>
     </table>

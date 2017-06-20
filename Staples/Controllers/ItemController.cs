@@ -27,11 +27,10 @@ namespace Staples.Controllers
             _context.ItemsModels.Add(newItem);
             _context.SaveChanges();
         }
-        [Route("api/item")]
+        [Route("api/item/{id}")]
         // DELETE: 
-        [ResponseType(typeof(Models.ItemsModels))]
-        [HttpDelete, Route("api/pantry/{id}")]
-        public IHttpActionResult DeleteFoodItems(int id)
+        [HttpDelete]
+        public IHttpActionResult deleteFoodItems(int id)
         {
             var foodItems = _context.ItemsModels.Find(id);
             if (foodItems == null)
@@ -45,12 +44,7 @@ namespace Staples.Controllers
 
             return Ok(foodItems);
         }
-        //[Route("api/item")]
-        //[HttpGet]
-        //public List<ItemsModels> GetItems()
-        //{
-        //   return _context.ItemsModels.ToList();
-        //}
+    
     }
     
 }

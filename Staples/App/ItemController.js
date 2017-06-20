@@ -1,6 +1,7 @@
 ﻿app.controller("ItemController", function ($q, $scope, $http) {
 
     $scope.ItemsModels = []
+   
 
 
     let getItems = function () {
@@ -16,27 +17,26 @@
 
             }, function (errorResponse) {
                 reject(errorResponse);
-
             });
         });
-
     }
 
     getItems();
 
+         $scope.deleteFoodItems = function (id) {
+            return $q((resolve, reject) => {
+                $http.delete(`api/item/${id}`)
+                .then(function (response) {
+                    resolve(response);
+                    getItems();
+                    console.log($scope.deleteFoodItems, "delete")
 
-    var deleteFoodItems = function (id) {
-        return $q((resolve, reject) => {
-            $http.delete(`api/item/${id}`)
-            .then(function (response) {
-                resolve(response);
+                },
 
-                console.log(response , "delete")
-            },
-                function (errorResponse) {
-                    reject(errorResponse);
-                })
-        })
+                    function (errorResponse) {
+                        reject(errorResponse);
+                    });
+            });
     }
 
 });
