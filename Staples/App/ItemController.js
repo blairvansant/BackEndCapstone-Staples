@@ -10,9 +10,10 @@
             $http.get("api/item")
             .then(function (response) {
                 resolve(response);
+
                 for (var i = 0; i < response.data.length; i++) {
                     var item = response.data[i];
-                    item.DateOfPurchase = moment(item.DateOfPurchase).fromNow()
+                    item.DateOfPurchase = moment(item.DateOfPurchase).format('dddd, MMM Do')
                     item.ExpirationDate = moment(item.ExpirationDate).fromNow()
                 }
 
