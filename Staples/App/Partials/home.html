@@ -6,8 +6,8 @@
     <center>
         <form class="form-inline">
             <input type="text" class="form-control" placeholder="enter a pantry item" ng-model="newItem.NameOfItem"/> 
-            <input type="text" class="form-control" placeholder="enter date purchased" ng-model="newItem.DateOfPurchase"/>
-            <input type="text" class="form-control" placeholder="enter expiration date" ng-model="newItem.ExpirationDate" />
+            <input type="date" class="form-control" placeholder="enter date purchased" ng-model="newItem.DateOfPurchase"/>
+            <input type="date" class="form-control" placeholder="enter expiration date" ng-model="newItem.ExpirationDate" />
             <input class="btn btn-primary" type="submit" value="Submit" ng-click="submitToPantryList()"/>
         </form>
     </center>
@@ -15,3 +15,8 @@
 
 
 
+<!--<form action="/action_page.php">
+    Birthday:
+    <input type="date" name="bday">
+    <input type="submit">
+</form>-->

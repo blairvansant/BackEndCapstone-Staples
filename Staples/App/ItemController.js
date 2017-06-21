@@ -10,6 +10,12 @@
             $http.get("api/item")
             .then(function (response) {
                 resolve(response);
+                for (var i = 0; i < response.data.length; i++) {
+                    var item = response.data[i];
+                    item.DateOfPurchase = moment(item.DateOfPurchase).fromNow()
+                    item.ExpirationDate = moment(item.ExpirationDate).fromNow()
+                }
+
                 $scope.ItemsModels = response.data;
 
                 console.log("respone from my api", response);
