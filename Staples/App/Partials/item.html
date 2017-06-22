@@ -3,19 +3,19 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>Product</th>
-                <th>Date of Purchase</th>
-                <th>Expiration Date</th>
+                <th style="font-family:'Bungee Shade', cursive;">Product</th>
+                <th style="font-family:'Bungee Shade', cursive;">Date of Purchase</th>
+                <th style="font-family:'Bungee Shade', cursive;">Expiration Date</th>
             </tr>
         </thead>
         <tbody ng-repeat="food in ItemsModels">
             <tr>
-                <td>{{food.NameOfItem}}</td>
-                <td>{{food.DateOfPurchase}}</td>
-                <td>{{food.ExpirationDate}}</td>
-                <td><a target="_blank"  href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={{food.NameOfItem}}" class="btn btn-primary btn-success">Purchase</a></td>
+                <td style="font-family:'Montserrat Alternates', sans-serif;" >{{food.NameOfItem}}</td>
+                <td style="font-family:'Montserrat Alternates', sans-serif;">{{food.DateOfPurchase}}</td>
+                <td style="font-family:'Montserrat Alternates', sans-serif;">{{food.ExpirationDate}}</td>
+                <td><a target="_blank"  href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={{food.NameOfItem}}" class="btn btn-default logbutton">Shop</a></td>
 
-                <td><button type="button" class="btn btn-primary btn-danger" ng-click="deleteFoodItems(food.Id)">Delete</button></td>
+                <td><button type="button" class="btn btn-default regbutton" ng-click="deleteFoodItems(food.Id)">Delete</button></td>
             </tr>
         </tbody>
     </table>

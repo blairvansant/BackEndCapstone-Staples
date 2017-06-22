@@ -1,31 +1,22 @@
 ﻿body, html{
     background-color:#FFEFD5;
-    font-size: 18px;
-}
-   /*font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 
-.register-form{
-    font-size: 16px;
-   left: 50%;
-    top: 50%;
-    position: absolute;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
+input{
+    font-family:'Montserrat Alternates', sans-serif;
 }
-       */
+     
 .regbutton{    
-    /*height: 50px;
-    width: 200px;*/
+   
     background-color:tomato;
-    border-radius: 0px;
+    border-radius: 05px;
     font-size: 18px;
     color:white;
     border: none !important;
     margin-bottom: 5px;
+    font-family:'Montserrat Alternates', sans-serif;
 }
 .regbutton:hover{    
     color: white;
@@ -36,16 +27,19 @@
     background-color:#aa422f;
 }
 
+label {
+    font-family:'Bungee Shade', cursive;
+}
       
 .logbutton{    
-    /*height: 50px;
-    width: 200px;*/
+    
     background-color:yellowgreen;
-    border-radius: 0px;
+    border-radius: 05px;
     font-size: 18px;
     color:white;
     border: none !important;
     margin-bottom: 5px;
+    font-family:'Montserrat Alternates', sans-serif;
 }
 .logbutton:hover{    
     color: white;
@@ -57,14 +51,3 @@
 }
 
 
-/*
-.register-form label{
-    color: aliceblue;
-    
-}
-.register-form input{
-    margin-bottom: 5px;
-    width: 430px;
-    height: 40px;
-    border-radius: 0px;
-}*/
