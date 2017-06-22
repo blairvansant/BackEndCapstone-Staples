@@ -1,17 +1,46 @@
-﻿<!--<ul>-->
-    <!--<li ng-repeat="value in values"></li>-->
-<!--  </ul>-->
-
-<center><h1>Staples</h1></center>
-    <center>
-        <form class="form-inline">
-            <input type="text" class="form-control" placeholder="enter a pantry item" ng-model="newItem.NameOfItem"/> 
-            <input type="text" class="form-control" placeholder="enter date purchased" ng-model="newItem.DateOfPurchase"/>
-            <input type="text" class="form-control" placeholder="enter expiration date" ng-model="newItem.ExpirationDate" />
-            <input class="btn btn-primary" type="submit" value="Submit" ng-click="submitToPantryList()"/>
-        </form>
-    </center>
+﻿<!--<center><h1>Staples</h1></center>
+<center>
+    <form class="form-inline">
+        <input type="text" class="form-control" placeholder="enter a pantry item" ng-model="newItem.NameOfItem" />
+        <input type="date" class="form-control" placeholder="enter date purchased" ng-model="newItem.DateOfPurchase" />
+        <input type="date" class="form-control" placeholder="enter expiration date" ng-model="newItem.ExpirationDate" />
+        <input class="btn btn-primary" type="submit" value="Submit" ng-click="submitToPantryList()" />
+    </form>
+</center>-->
 
 
 
+<div class="container-fluid">
+    <form class="register-form">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4 col-lg-offset-4">
+                <label for="item">ENTER A STAPLE</label>
+                <input type="text" class="form-control" ng-model="newItem.NameOfItem" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4 col-lg-offset-4">
+                <label for="datePurchased">PURCHASE DATE</label>
+                <input type="date" class="form-control" ng-model="newItem.DateOfPurchase" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4 col-lg-offset-4">
+                <label for="dateExpire">EXPIRATION DATE</label>
+                <input type="date" class="form-control" ng-model="newItem.ExpirationDate" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 col-lg-offset-4">
+                <button class="btn btn-default logbutton" ng-click="submitToPantryList()">Submit</button>
+            </div>
+        </div>
+        <!--<div>
+            <input class="btn btn-primary" type="submit" value="Submit" ng-click="submitToPantryList()" />
 
+        </div>-->
+    </form>
+</div>

@@ -1,0 +1,53 @@
+﻿body, html{
+    background-color:#FFEFD5;
+    font-size: 20px;
+
+}
+
+input{
+    font-family:'Montserrat Alternates', sans-serif;
+}
+     
+.regbutton{    
+   
+    background-color:tomato;
+    border-radius: 05px;
+    font-size: 18px;
+    color:white;
+    border: none !important;
+    margin-bottom: 5px;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+.regbutton:hover{    
+    color: white;
+    background-color:#aa422f;
+}
+.regbutton:active{    
+    color: white;
+    background-color:#aa422f;
+}
+
+label {
+    font-family:'Bungee Shade', cursive;
+}
+      
+.logbutton{    
+    
+    background-color:yellowgreen;
+    border-radius: 05px;
+    font-size: 18px;
+    color:white;
+    border: none !important;
+    margin-bottom: 5px;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+.logbutton:hover{    
+    color: white;
+    background-color:darkolivegreen;
+}
+.logbutton:active{    
+    color: white;
+    background-color:darkolivegreen;
+}
+
+
